@@ -8,6 +8,7 @@ Suporta FRE (via Playwright, gera PDF) e IPE (httpx direto).
 
 import re
 import json
+import asyncio
 import logging
 import tempfile
 from pathlib import Path
@@ -262,9 +263,10 @@ class ENETScraper:
         num_seq: str,
         num_versao: str,
         num_protocolo: str,
+        max_retries: int = 3,
     ) -> bytes:
         """
-        Baixa PDF IPE diretamente via httpx.
+        Baixa PDF IPE diretamente via httpx com retry (até 3 tentativas, backoff 2s/4s).
 
         URL: frmDownloadDocumento.aspx?Tela=ext&numSequencia=...&numVersao=...
              &numProtocolo=...&descTipo=IPE&CodigoInstituicao=1
@@ -278,66 +280,112 @@ class ENETScraper:
             f"&descTipo=IPE"
             f"&CodigoInstituicao=1"
         )
-        self.logger.info(f"Baixando IPE PDF: {url}")
-        async with httpx.AsyncClient(timeout=120, follow_redirects=True) as client:
-            resp = await client.get(url)
-            resp.raise_for_status()
-        content = resp.content
-        if not content[:4] == b"%PDF":
-            raise ValueError(
-                f"Conteúdo baixado não é PDF válido (primeiros bytes: {content[:20]!r})"
-            )
-        return content
+        last_exc: Exception = RuntimeError("nenhuma tentativa executada")
+        for attempt in range(1, max_retries + 1):
+            try:
+                self.logger.info(f"Baixando IPE PDF (tentativa {attempt}/{max_retries}): {url}")
+                async with httpx.AsyncClient(timeout=120, follow_redirects=True) as client:
+                    resp = await client.get(url)
+                    resp.raise_for_status()
+                content = resp.content
+                if content[:4] != b"%PDF":
+                    raise ValueError(
+                        f"Conteúdo baixado não é PDF válido (primeiros bytes: {content[:20]!r})"
+                    )
+                return content
+            except Exception as exc:
+                last_exc = exc
+                if attempt < max_retries:
+                    delay = 2 ** attempt  # 2s, 4s
+                    self.logger.warning(
+                        f"IPE download tentativa {attempt}/{max_retries} falhou: {exc}. "
+                        f"Aguardando {delay}s antes de tentar novamente..."
+                    )
+                    await asyncio.sleep(delay)
+                else:
+                    self.logger.error(
+                        f"IPE download falhou após {max_retries} tentativas (seq={num_seq}): {exc}"
+                    )
+        raise last_exc
 
     # ─── Download FRE (Playwright) ────────────────────────────────────────────
 
-    async def download_fre_pdf(self, num_seq: str, output_path: Path) -> Path:
+    async def download_fre_pdf(
+        self,
+        num_seq: str,
+        output_path: Path,
+        max_retries: int = 3,
+    ) -> Path:
         """
-        Baixa PDF de FRE via Playwright:
+        Baixa PDF de FRE via Playwright com retry (até 3 tentativas, backoff 5s/10s):
           1. Navega para frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento={seq}
           2. JS click em #btnGeraRelatorioPDF → abre dialog jQuery UI (mesma página)
           3. O dialog contém iframe#iFrameModal → frmRelatorioPDF.aspx
           4. Clica em #btnConsulta dentro do iframe → dispara download via FileSaver.js
-          5. Captura o download e salva em output_path
+          5. Captura o download, salva em output_path e valida que é PDF válido
         """
         viewer_url = (
             f"{self._VIEWER}"
             f"?NumeroSequencialDocumento={num_seq}"
             f"&CodigoTipoInstituicao=1"
         )
-        self.logger.info(f"Gerando PDF FRE via Playwright: seq={num_seq}")
-
-        async with async_playwright() as p:
-            browser = await p.chromium.launch(headless=True)
-            context = await browser.new_context(accept_downloads=True)
-            page = await context.new_page()
+        last_exc: Exception = RuntimeError("nenhuma tentativa executada")
+        for attempt in range(1, max_retries + 1):
+            self.logger.info(
+                f"Gerando PDF FRE via Playwright (tentativa {attempt}/{max_retries}): seq={num_seq}"
+            )
             try:
-                await page.goto(viewer_url, wait_until="load", timeout=60_000)
+                async with async_playwright() as p:
+                    browser = await p.chromium.launch(headless=True)
+                    context = await browser.new_context(accept_downloads=True)
+                    page = await context.new_page()
+                    try:
+                        await page.goto(viewer_url, wait_until="load", timeout=60_000)
 
-                # Passo 1: abre o dialog "Documento em PDF" (jQuery UI modal na mesma página).
-                # O dialog contém iframe#iFrameModal → frmRelatorioPDF.aspx com #btnConsulta.
-                # Usa JS click para não ser bloqueado por ui-widget-overlay transitório.
-                await page.evaluate(
-                    "document.querySelector('#btnGeraRelatorioPDF').click()"
-                )
+                        # Passo 1: abre o dialog "Documento em PDF" (jQuery UI modal).
+                        await page.evaluate(
+                            "document.querySelector('#btnGeraRelatorioPDF').click()"
+                        )
 
-                # Passo 2: clica em #btnConsulta dentro do iframe para disparar download.
-                # frame_locator() lida automaticamente com a navegação do iframe.
-                async with page.expect_download(timeout=120_000) as dl_info:
-                    await page.frame_locator("iframe#iFrameModal").locator(
-                        "#btnConsulta"
-                    ).click(timeout=45_000)
+                        # Passo 2: clica em #btnConsulta dentro do iframe para disparar download.
+                        async with page.expect_download(timeout=120_000) as dl_info:
+                            await page.frame_locator("iframe#iFrameModal").locator(
+                                "#btnConsulta"
+                            ).click(timeout=45_000)
 
-                download = await dl_info.value
-                await download.save_as(output_path)
+                        download = await dl_info.value
+                        await download.save_as(output_path)
+                    finally:
+                        await context.close()
+                        await browser.close()
+
+                # Valida que o arquivo baixado é um PDF real
+                if not output_path.exists() or output_path.stat().st_size == 0:
+                    raise ValueError("Arquivo baixado está vazio ou não existe")
+                with open(output_path, "rb") as f:
+                    if f.read(4) != b"%PDF":
+                        output_path.unlink(missing_ok=True)
+                        raise ValueError("Arquivo baixado não é PDF válido")
+
                 self.logger.info(
                     f"PDF FRE gerado: {output_path} ({output_path.stat().st_size} bytes)"
                 )
-            finally:
-                await context.close()
-                await browser.close()
+                return output_path
 
-        return output_path
+            except Exception as exc:
+                last_exc = exc
+                if attempt < max_retries:
+                    delay = 5 * attempt  # 5s, 10s
+                    self.logger.warning(
+                        f"FRE download tentativa {attempt}/{max_retries} falhou: {exc}. "
+                        f"Aguardando {delay}s antes de tentar novamente..."
+                    )
+                    await asyncio.sleep(delay)
+                else:
+                    self.logger.error(
+                        f"FRE download falhou após {max_retries} tentativas (seq={num_seq}): {exc}"
+                    )
+        raise last_exc
 
 
 # =============================================================================
