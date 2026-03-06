@@ -16,7 +16,11 @@ export default function Layout({ children }) {
     <div className="app-layout">
       <aside className="sidebar">
         <div className="sidebar-header">
-          <img src="/images/logo-dark.png" alt="CVM Analyzer" className="sidebar-logo" />
+          <img src="/images/icon-32.png" alt="Escudo CVM" className="sidebar-icon" />
+          <div className="sidebar-brand">
+            <span className="sidebar-title">CVM Analyzer</span>
+            <span className="sidebar-subtitle">Resolução CVM 80</span>
+          </div>
         </div>
         <CompanySelector />
 

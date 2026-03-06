@@ -13,26 +13,26 @@
      ========================================================================== */
 
   /* Primary Brand Colors */
-  --app-primary: #00703C;
-  /* Logo, Títulos, Ícones */
-  --app-secondary: #005A30;
-  /* Backgrounds de Rodapé, Seções de Destaque */
-  --app-action: #116DFF;
+  --app-primary: #0F3172;
+  /* Sidebar, Títulos, Ícones — azul marinho */
+  --app-secondary: #0A2254;
+  /* Backgrounds de destaque — azul escuro */
+  --app-action: #2563EB;
   /* Botões de CTA, Hovers */
-  --app-text: #2F2B36;
+  --app-text: #1B2845;
   /* Texto de corpo (Body Copy) */
-  --app-bg-light: #F4F4F4;
+  --app-bg-light: #F2F5FA;
   /* Backgrounds secundários, Cards */
 
   /* Mapeamento para variáveis de componentes */
   --color-primary: var(--app-primary);
   --color-primary-hover: var(--app-secondary);
-  --color-primary-light: #e6f1ec;
-  --color-primary-dark: #004324;
+  --color-primary-light: #E8F0FE;
+  --color-primary-dark: #061235;
 
   /* Action/CTA Colors */
   --color-action: var(--app-action);
-  --color-action-hover: #0d5adc;
+  --color-action-hover: #1d4ed8;
 
   /* Secondary Colors */
   --color-secondary: #64748b;
@@ -123,10 +123,10 @@
   --radius-lg: 0.75rem;
   --radius-xl: 1rem;
   --radius-2xl: 1.25rem;
-  --radius-card: 1rem;
-  /* 16px - Cards */
-  --radius-btn: 1.5rem;
-  /* 24px - Pill buttons */
+  --radius-card: 0.5rem;
+  /* 8px - Cards */
+  --radius-btn: 0.375rem;
+  /* 6px - Buttons */
   --radius-full: 9999px;
 
   /* ==========================================================================
@@ -137,7 +137,7 @@
   --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.08), 0 4px 6px -4px rgb(0 0 0 / 0.05);
   --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.08), 0 8px 10px -6px rgb(0 0 0 / 0.05);
   --shadow-card: 0 2px 8px -2px rgb(0 0 0 / 0.08);
-  --shadow-glow: 0 0 20px rgb(0 112 60 / 0.15);
+  --shadow-glow: 0 0 20px rgb(15 49 114 / 0.15);
 
   /* ==========================================================================
      Transitions - Smooth
@@ -276,19 +276,19 @@ button:focus:not(:focus-visible) {
   cursor: not-allowed;
 }
 
-/* Primary CTA Button - Green Action */
+/* Primary CTA Button */
 .btn-primary {
   color: var(--color-white);
   background: linear-gradient(135deg, var(--app-primary) 0%, var(--app-secondary) 100%);
   border-color: var(--app-primary);
-  box-shadow: 0 2px 8px -2px rgba(0, 112, 60, 0.4);
+  box-shadow: 0 2px 8px -2px rgba(15, 49, 114, 0.4);
 }
 
 .btn-primary:hover:not(:disabled) {
-  background: linear-gradient(135deg, var(--app-secondary) 0%, #004324 100%);
+  background: linear-gradient(135deg, var(--app-secondary) 0%, #061235 100%);
   border-color: var(--app-secondary);
   transform: translateY(-1px);
-  box-shadow: 0 4px 14px -2px rgba(0, 112, 60, 0.5);
+  box-shadow: 0 4px 14px -2px rgba(15, 49, 114, 0.5);
 }
 
 .btn-primary:active:not(:disabled) {
@@ -696,6 +696,20 @@ select.input {
   height: 40px;
   width: auto;
   object-fit: contain;
+}
+
+.sidebar-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: brightness(0) invert(1);
+}
+
+.sidebar-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
 }
 
 .sidebar-logo-placeholder {
@@ -1290,7 +1304,7 @@ tbody tr:hover {
   right: -20%;
   width: 400px;
   height: 400px;
-  background: radial-gradient(circle, rgba(147, 191, 13, 0.3) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(99, 155, 255, 0.3) 0%, transparent 70%);
   border-radius: 50%;
 }
 
@@ -1570,7 +1584,7 @@ tbody tr:hover {
 }
 
 .table-premium tbody tr:nth-child(even) {
-  background-color: rgba(0, 112, 60, 0.02);
+  background-color: rgba(15, 49, 114, 0.02);
 }
 
 .table-premium tbody tr:hover {
@@ -1588,7 +1602,7 @@ tbody tr:hover {
    ========================================================================== */
 .expand-content {
   padding: var(--space-5) var(--space-6);
-  background: linear-gradient(135deg, var(--color-gray-50) 0%, rgba(0, 112, 60, 0.03) 100%);
+  background: linear-gradient(135deg, var(--color-gray-50) 0%, rgba(15, 49, 114, 0.03) 100%);
   border-bottom: 2px solid var(--color-primary-light);
   animation: expandIn 0.25s ease;
 }
@@ -2378,7 +2392,7 @@ tbody tr:hover {
 .form-input:focus {
   outline: none;
   border-color: var(--app-primary);
-  box-shadow: 0 0 0 3px rgba(0, 112, 60, 0.15);
+  box-shadow: 0 0 0 3px rgba(15, 49, 114, 0.15);
 }
 
 .form-select {
@@ -2929,8 +2943,8 @@ tbody tr:hover {
 }
 .archive-tab-btn:hover { color: var(--text-primary); }
 .archive-tab-btn.active {
-  color: var(--primary, #00703C);
-  border-bottom-color: var(--primary, #00703C);
+  color: var(--primary, #0F3172);
+  border-bottom-color: var(--primary, #0F3172);
 }
 
 /* Outline variant for btn-xs */
@@ -2945,8 +2959,8 @@ tbody tr:hover {
   transition: var(--transition-fast);
 }
 .btn-xs.btn-outline:hover {
-  border-color: var(--primary, #00703C);
-  color: var(--primary, #00703C);
+  border-color: var(--primary, #0F3172);
+  color: var(--primary, #0F3172);
 }
 .btn-xs.btn-outline:disabled {
   opacity: 0.5;
@@ -3696,7 +3710,7 @@ tbody tr:hover {
 }
 
 .company-select option {
-  background: #1a2e1f;
+  background: #0a1929;
   color: #ffffff;
 }
 
