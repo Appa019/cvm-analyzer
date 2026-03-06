@@ -1,5 +1,7 @@
 # CVM Analyzer
 
+#Link Landing Page: https://landing-sage-iota-51.vercel.app/
+
 Ferramenta local para análise, avaliação de conformidade e comparação de documentos CVM — **FRE, DFP, FCA e IPE** — com base na **Resolução CVM nº 80**.
 
 Sem autenticação, sem dados em nuvem. Tudo roda localmente na sua máquina.
