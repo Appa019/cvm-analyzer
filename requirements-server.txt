@@ -1,0 +1,47 @@
+# FRE Analyzer - Server Requirements (headless, no desktop GUI)
+# ==========================================================
+# Use this instead of backend/requirements.txt on cloud servers.
+# Excludes pywebview (requires GTK/Qt) and pyinstaller (build-only).
+
+# Core Framework
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+
+# Database
+sqlalchemy>=2.0.25
+aiosqlite>=0.19.0
+
+# OpenAI API
+openai>=1.12.0
+
+# PDF Processing
+PyMuPDF>=1.23.0
+pdfplumber>=0.10.0
+
+# Document Processing
+python-docx>=1.1.0
+
+# Data Processing
+pandas>=2.1.0
+numpy>=1.26.0
+
+# HTTP Client
+httpx>=0.26.0
+aiofiles>=23.2.0
+
+# Utilities
+python-dateutil>=2.8.0
+pyyaml>=6.0.0
+
+# Rate Limiting
+slowapi>=0.1.9
+
+# Scraping agêntico
+playwright>=1.50.0
+crawl4ai>=0.4.0
+
+# Export
+openpyxl>=3.1.0
+reportlab>=4.1.0

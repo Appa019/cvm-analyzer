@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+venv/
+venv*/
+env/
+*.egg-info/
+dist/
+build/
+
+# Environment variables
+.env
+
+# Node.js / Frontend
+node_modules/
+frontend/dist/
+frontend/node_modules/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# LibreOffice lock files
+.~lock.*#
+
+# Cache
+.cache_llm/
+cache/
+
+# Output
+out/
+
+.playwright-mcp/
+docs/plans/
+
+# Landing page screenshots (imagens locais, não versionadas)
+landing/public/screenshots/

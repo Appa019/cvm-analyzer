@@ -1,0 +1,32 @@
+[Unit]
+Description=FRE Analyzer Application
+After=network.target
+
+[Service]
+Type=exec
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/home/ubuntu/cvm-analyzer
+EnvironmentFile=/home/ubuntu/cvm-analyzer/.env
+Environment="PYTHONDONTWRITEBYTECODE=1"
+Environment="PYTHONUNBUFFERED=1"
+ExecStart=/home/ubuntu/cvm-analyzer/start.sh
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+# Memory limits (Oracle Cloud Free Tier — 1GB RAM)
+MemoryMax=768M
+MemoryHigh=600M
+LimitNOFILE=4096
+
+# Security hardening
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=/home/ubuntu/.local/share/FREAnalyzer
+PrivateTmp=true
+NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target

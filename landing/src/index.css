@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: #0A1F14;
+    color: #1A2E23;
+    font-family: 'Wix Madefor Text', sans-serif;
+    line-height: 1.6;
+  }
+
+  ::selection {
+    background-color: rgba(0, 112, 60, 0.18);
+    color: #1A2E23;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0A1F14;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #33A76B;
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #00703C;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full font-semibold text-white text-sm;
+    background-color: #00703C;
+    box-shadow: 0 4px 16px rgba(0, 112, 60, 0.30);
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+  }
+
+  .btn-primary:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 24px rgba(0, 112, 60, 0.42);
+  }
+
+  .btn-primary:active {
+    transform: scale(0.98);
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full font-semibold text-sm;
+    color: #00703C;
+    border: 1.5px solid #00703C;
+    background: transparent;
+    transition: background 0.2s ease-out, transform 0.2s ease-out;
+  }
+
+  .btn-outline:hover {
+    background: rgba(0, 112, 60, 0.05);
+    transform: scale(1.02);
+  }
+
+  .btn-outline-light {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full font-semibold text-sm;
+    color: rgba(255, 255, 255, 0.8);
+    border: 1.5px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+    transition: background 0.2s ease-out, transform 0.2s ease-out, color 0.2s ease-out;
+  }
+
+  .btn-outline-light:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    transform: scale(1.02);
+  }
+
+  .btn-blue {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full font-semibold text-white text-sm;
+    background-color: #116DFF;
+    box-shadow: 0 4px 16px rgba(17, 109, 255, 0.28);
+    transition: background-color 0.2s ease-out, transform 0.2s ease-out, box-shadow 0.2s ease-out;
+  }
+
+  .btn-blue:hover {
+    background-color: #0E57CC;
+    transform: scale(1.03);
+    box-shadow: 0 6px 24px rgba(17, 109, 255, 0.38);
+  }
+
+  .section-badge {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider;
+    background-color: rgba(0, 112, 60, 0.08);
+    color: #00703C;
+    border: 1px solid rgba(0, 112, 60, 0.15);
+  }
+
+  .section-badge-dark {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider;
+    background-color: rgba(0, 112, 60, 0.15);
+    color: #66BD90;
+    border: 1px solid rgba(0, 112, 60, 0.25);
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}

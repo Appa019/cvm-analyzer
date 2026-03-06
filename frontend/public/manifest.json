@@ -1,0 +1,13 @@
+{
+  "name": "CVM Analyzer",
+  "short_name": "CVM Analyzer",
+  "description": "Análise de FREs com IA — CVM Resolução 80",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#005A30",
+  "theme_color": "#00703C",
+  "icons": [
+    { "src": "/images/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/images/icon-512-bg.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
