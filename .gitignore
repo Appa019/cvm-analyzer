@@ -43,5 +43,3 @@ out/
 .playwright-mcp/
 docs/plans/
 
-# Landing page screenshots (imagens locais, não versionadas)
-landing/public/screenshots/
