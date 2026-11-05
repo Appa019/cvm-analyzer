@@ -1,0 +1,803 @@
+[
+ {
+  "id": "1",
+  "titulo": "Identificação das pessoas responsáveis pelo conteúdo do formulário",
+  "itens": [
+   {
+    "id": "1.1",
+    "titulo": "Declarações individuais do Presidente e do Diretor de Relações com Investidores devidamente assinadas, atestando que",
+    "facultativo": false
+   },
+   {
+    "id": "1.2",
+    "titulo": "Declaração individual de novo ocupante do cargo de Presidente ou de Diretor de Relações com Investidores devidamente assinada, atestando que",
+    "facultativo": false
+   }
+  ]
+ },
+ {
+  "id": "2",
+  "titulo": "Auditores",
+  "itens": [
+   {
+    "id": "2.1",
+    "titulo": "Em relação aos auditores independentes, indicar",
+    "facultativo": false
+   },
+   {
+    "id": "2.2",
+    "titulo": "Informar montante total de remuneração dos auditores independentes no último exercício social, discriminando os honorários relativos a serviços de auditoria e os relativos a quaisquer outros serviços prestados",
+    "facultativo": false
+   },
+   {
+    "id": "2.3",
+    "titulo": "Fornecer outras informações que o emissor julgue relevantes",
+    "facultativo": false
+   }
+  ]
+ },
+ {
+  "id": "3",
+  "titulo": "Informações financeiras selecionadas",
+  "itens": [
+   {
+    "id": "3.1",
+    "titulo": "Com base nas demonstrações financeiras ou, quando o emissor estiver obrigado a divulgar informações financeiras consolidadas, com base nas demonstrações financeiras consolidadas, elaborar tabela informando",
+    "facultativo": true
+   },
+   {
+    "id": "3.2",
+    "titulo": "Caso o emissor tenha divulgado, no decorrer do último exercício social, ou deseje divulgar neste formulário medições não contábeis, como Lajida (lucro antes de juros, impostos, depreciação e amortização) ou Lajir (lucro antes de juros e imposto de renda), o emissor deve",
+    "facultativo": true
+   },
+   {
+    "id": "3.3",
+    "titulo": "Identificar e comentar qualquer evento subsequente às últimas demonstrações financeiras de encerramento de exercício social que as altere substancialmente",
+    "facultativo": true
+   },
+   {
+    "id": "3.4",
+    "titulo": "Descrever a política de destinação dos resultados dos 3 últimos exercícios sociais, indicando",
+    "facultativo": false
+   },
+   {
+    "id": "3.5",
+    "titulo": "Em forma de tabela, indicar, para cada um dos 3 últimos exercícios sociais",
+    "facultativo": true
+   },
+   {
+    "id": "3.6",
+    "titulo": "Informar se, nos 3 últimos exercícios sociais, foram declarados dividendos a conta de lucros retidos ou reservas constituídas em exercícios sociais anteriores",
+    "facultativo": true
+   },
+   {
+    "id": "3.7",
+    "titulo": "Em forma de tabela, descrever o nível de endividamento do emissor, indicando",
+    "facultativo": false
+   },
+   {
+    "id": "3.8",
+    "titulo": "Em forma de tabela, separando por obrigações (empréstimos, financiamentos e títulos de dívida) com garantia real, com garantia flutuante e quirografárias, ou com outro tipo de garantia ou privilégio, indicar o montante de obrigações do emissor de acordo com o prazo de vencimento",
+    "facultativo": false
+   },
+   {
+    "id": "3.9",
+    "titulo": "Fornecer outras informações que o emissor julgue relevantes",
+    "facultativo": false
+   }
+  ]
+ },
+ {
+  "id": "4",
+  "titulo": "Fatores de risco",
+  "itens": [
+   {
+    "id": "4.1",
+    "titulo": "Descrever fatores de risco que possam influenciar a decisão de investimento, em especial, aqueles relacionados",
+    "facultativo": false
+   },
+   {
+    "id": "4.2",
+    "titulo": "Descrever, quantitativa e qualitativamente, os principais riscos de mercado a que o emissor está exposto, inclusive em relação a riscos cambiais e a taxas de juros.",
+    "facultativo": false
+   },
+   {
+    "id": "4.3",
+    "titulo": "Descrever os processos judiciais, administrativos ou arbitrais em que o emissor ou suas controladas sejam parte, discriminando entre trabalhistas, tributários, cíveis e outros: (i) que não estejam sob sigilo, e (ii) que sejam relevantes para os negócios do emissor ou de suas controladas, indicando",
+    "facultativo": false
+   },
+   {
+    "id": "4.3.1",
+    "titulo": "Indicar o valor total provisionado, se houver, dos processos descritos no item 4.3",
+    "facultativo": false
+   },
+   {
+    "id": "4.4",
+    "titulo": "Descrever os processos judiciais, administrativos ou arbitrais, que não estejam sob sigilo, em que o emissor ou suas controladas sejam parte e cujas partes contrárias sejam administradores ou ex-administradores, controladores ou ex-controladores ou investidores do emissor ou de suas controladas, inf",
+    "facultativo": true
+   },
+   {
+    "id": "4.4.1",
+    "titulo": "Indicar o valor total provisionado, se houver, dos processos descritos no item 4.4",
+    "facultativo": true
+   },
+   {
+    "id": "4.5",
+    "titulo": "Em relação aos processos sigilosos relevantes em que o emissor ou suas controladas sejam parte e que não tenham sido divulgados nos itens 4.3 e 4.4 acima, analisar o impacto em caso de perda e informar os valores envolvidos",
+    "facultativo": false
+   },
+   {
+    "id": "4.6",
+    "titulo": "Descrever os processos judiciais, administrativos ou arbitrais repetitivos ou conexos, baseados em fatos e causas jurídicas semelhantes, que não estejam sob sigilo e que em conjunto sejam relevantes, em que o emissor ou suas controladas sejam parte, discriminando entre trabalhistas, tributários, cív",
+    "facultativo": false
+   },
+   {
+    "id": "4.6.1",
+    "titulo": "Indicar o valor total provisionado, se houver, dos processos descritos no item 4.6",
+    "facultativo": false
+   },
+   {
+    "id": "4.7",
+    "titulo": "Descrever outras contingências relevantes não abrangidas pelos itens anteriores",
+    "facultativo": false
+   },
+   {
+    "id": "4.8",
+    "titulo": "Em relação às regras do país de origem do emissor estrangeiro e às regras do país no qual os valores mobiliários do emissor estrangeiro estão custodiados, se diferente do país de origem, identificar",
+    "facultativo": false
+   }
+  ]
+ },
+ {
+  "id": "5",
+  "titulo": "Política de gerenciamento de riscos e controles internos",
+  "itens": [
+   {
+    "id": "5.1",
+    "titulo": "Em relação aos riscos indicados no item 4.1, informar",
+    "facultativo": true
+   },
+   {
+    "id": "5.2",
+    "titulo": "Em relação aos riscos de mercado indicados no item 4.2, informar",
+    "facultativo": true
+   },
+   {
+    "id": "5.3",
+    "titulo": "Em relação aos controles adotados pelo emissor para assegurar a elaboração de demonstrações financeiras confiáveis, indicar",
+    "facultativo": false
+   },
+   {
+    "id": "5.4",
+    "titulo": "Em relação aos mecanismos e procedimentos internos de integridade adotados pelo emissor para prevenir, detectar e sanar desvios, fraudes, irregularidades e atos ilícitos praticados contra a administração pública, nacional ou estrangeira, informar",
+    "facultativo": false
+   },
+   {
+    "id": "5.5",
+    "titulo": "Informar se, em relação ao último exercício social, houve alterações significativas nos principais riscos a que o emissor está exposto ou na política de gerenciamento de riscos adotada, comentando, ainda, eventuais expectativas de redução ou aumento na exposição do emissor a tais riscos”",
+    "facultativo": true
+   },
+   {
+    "id": "5.6",
+    "titulo": "Fornecer outras informações que o emissor julgue relevantes",
+    "facultativo": false
+   }
+  ]
+ },
+ {
+  "id": "6",
+  "titulo": "Histórico do emissor",
+  "itens": [
+   {
+    "id": "6.1",
+    "titulo": "Com relação à constituição do emissor, informar",
+    "facultativo": false
+   },
+   {
+    "id": "6.2",
+    "titulo": "Informar prazo de duração, se houver",
+    "facultativo": false
+   },
+   {
+    "id": "6.3",
+    "titulo": "Breve histórico do emissor",
+    "facultativo": false
+   },
+   {
+    "id": "6.4",
+    "titulo": "Data de registro na CVM ou indicação de que o registro está sendo requerido",
+    "facultativo": false
+   },
+   {
+    "id": "6.5",
+    "titulo": "Indicar se houve pedido de falência, desde que fundado em valor relevante, ou de recuperação judicial ou extrajudicial do emissor, e o estado atual de tais pedidos",
+    "facultativo": false
+   },
+   {
+    "id": "6.6",
+    "titulo": "Fornecer outras informações que o emissor julgue relevantes",
+    "facultativo": false
+   }
+  ]
+ },
+ {
+  "id": "7",
+  "titulo": "Atividades do emissor",
+  "itens": [
+   {
+    "id": "7.1",
+    "titulo": "Descrever sumariamente as atividades principais desenvolvidas pelo emissor e suas controladas",
+    "facultativo": false
+   },
+   {
+    "id": "7.2",
+    "titulo": "Em relação a cada segmento operacional que tenha sido divulgado nas últimas demonstrações financeiras de encerramento de exercício social ou, quando houver, nas demonstrações financeiras consolidadas, indicar as seguintes informações",
+    "facultativo": true
+   },
+   {
+    "id": "7.3",
+    "titulo": "Em relação aos produtos e serviços que correspondam aos segmentos operacionais divulgados no item 7.2, descrever",
+    "facultativo": true
+   },
+   {
+    "id": "7.4",
+    "titulo": "Identificar se há clientes que sejam responsáveis por mais de 10% da receita líquida total do emissor, informando",
+    "facultativo": true
+   },
+   {
+    "id": "7.5",
+    "titulo": "Descrever os efeitos relevantes da regulação estatal sobre as atividades do emissor, comentando especificamente",
+    "facultativo": true
+   },
+   {
+    "id": "7.6",
+    "titulo": "Em relação aos países dos quais o emissor obtém receitas relevantes, identificar",
+    "facultativo": true
+   },
+   {
+    "id": "7.7",
+    "titulo": "Em relação aos países estrangeiros divulgados no item 7.6, informar em que medida o emissor está sujeito à regulação desses países e de que modo tal sujeição afeta os negócios do emissor",
+    "facultativo": true
+   },
+   {
+    "id": "7.8",
+    "titulo": "Em relação a políticas socioambientais, indicar",
+    "facultativo": true
+   },
+   {
+    "id": "7.9",
+    "titulo": "Fornecer outras informações que o emissor julgue relevantes",
+    "facultativo": false
+   }
+  ]
+ },
+ {
+  "id": "8",
+  "titulo": "Negócios extraordinários",
+  "itens": [
+   {
+    "id": "8.1",
+    "titulo": "Indicar a aquisição ou alienação de qualquer ativo relevante que não se enquadre como operação normal nos negócios do emissor",
+    "facultativo": false
+   },
+   {
+    "id": "8.2",
+    "titulo": "Indicar alterações significativas na forma de condução dos negócios do emissor",
+    "facultativo": false
+   },
+   {
+    "id": "8.3",
+    "titulo": "Identificar os contratos relevantes celebrados pelo emissor e suas controladas não diretamente relacionados com suas atividades operacionais",
+    "facultativo": false
+   },
+   {
+    "id": "8.4",
+    "titulo": "Fornecer outras informações que o emissor julgue relevantes",
+    "facultativo": false
+   }
+  ]
+ },
+ {
+  "id": "9",
+  "titulo": "Ativos relevantes",
+  "itens": [
+   {
+    "id": "9.1",
+    "titulo": "Descrever os bens do ativo não-circulante relevantes para o desenvolvimento das atividades do emissor, indicando em especial",
+    "facultativo": true
+   },
+   {
+    "id": "9.2",
+    "titulo": "Fornecer outras informações que o emissor julgue relevantes",
+    "facultativo": false
+   }
+  ]
+ },
+ {
+  "id": "10",
+  "titulo": "Comentários dos diretores",
+  "itens": [
+   {
+    "id": "10.1",
+    "titulo": "Os diretores devem comentar sobre-",
+    "facultativo": false
+   },
+   {
+    "id": "10.2",
+    "titulo": "Os diretores devem comentar-",
+    "facultativo": false
+   },
+   {
+    "id": "10.3",
+    "titulo": "Os diretores devem comentar os efeitos relevantes que os eventos abaixo tenham causado ou se espera que venham a causar nas demonstrações financeiras do emissor e em seus resultados",
+    "facultativo": false
+   },
+   {
+    "id": "10.4",
+    "titulo": "Os diretores devem comentar",
+    "facultativo": false
+   },
+   {
+    "id": "10.5",
+    "titulo": "Os diretores devem indicar e comentar políticas contábeis críticas adotadas pelo emissor, explorando, em especial, estimativas contábeis feitas pela administração sobre questões incertas e relevantes para a descrição da situação financeira e dos resultados, que exijam julgamentos subjetivos ou compl",
+    "facultativo": true
+   },
+   {
+    "id": "10.6",
+    "titulo": "Os diretores devem descrever os itens relevantes não evidenciados nas demonstrações financeiras do emissor, indicando",
+    "facultativo": false
+   },
+   {
+    "id": "10.7",
+    "titulo": "Em relação a cada um dos itens não evidenciados nas demonstrações financeiras indicados no item 10.6, os diretores devem comentar",
+    "facultativo": false
+   },
+   {
+    "id": "10.8",
+    "titulo": "Os diretores devem indicar e comentar os principais elementos do plano de negócios do emissor, explorando especificamente os seguintes tópicos",
+    "facultativo": false
+   },
+   {
+    "id": "10.9",
+    "titulo": "Comentar sobre outros fatores que influenciaram de maneira relevante o desempenho operacional e que não tenham sido identificados ou comentados nos demais itens desta seção",
+    "facultativo": false
+   }
+  ]
+ },
+ {
+  "id": "11",
+  "titulo": "Projeções",
+  "itens": [
+   {
+    "id": "11.1",
+    "titulo": "As projeções devem identificar",
+    "facultativo": false
+   },
+   {
+    "id": "11.2",
+    "titulo": "Na hipótese de o emissor ter divulgado, durante os 3 últimos exercícios sociais, projeções sobre a evolução de seus indicadores",
+    "facultativo": false
+   }
+  ]
+ },
+ {
+  "id": "12",
+  "titulo": "Assembleia geral e administração",
+  "itens": [
+   {
+    "id": "12.1",
+    "titulo": "Descrever a estrutura administrativa do emissor, conforme estabelecido no seu estatuto social e regimento interno, identificando",
+    "facultativo": false
+   },
+   {
+    "id": "12.2",
+    "titulo": "Descrever as regras, políticas e práticas relativas às assembleias gerais, indicando",
+    "facultativo": true
+   },
+   {
+    "id": "12.3",
+    "titulo": "Descrever as regras, políticas e práticas relativas ao conselho de administração, indicando",
+    "facultativo": true
+   },
+   {
+    "id": "12.4",
+    "titulo": "Se existir, descrever a cláusula compromissória inserida no estatuto para a resolução dos conflitos entre acionistas e entre estes e o emissor por meio de arbitragem",
+    "facultativo": true
+   },
+   {
+    "id": "12.5",
+    "titulo": "Em relação a cada um dos administradores e membros do conselho fiscal do emissor, indicar, em forma de tabela",
+    "facultativo": false
+   },
+   {
+    "id": "12.6",
+    "titulo": "Em relação a cada uma das pessoas que atuaram como membro do conselho de administração ou do conselho fiscal no último exercício, informar, em formato de tabela, o percentual de participação nas reuniões realizadas pelo respectivo órgão no mesmo período, que tenham ocorrido após a posse no cargo",
+    "facultativo": false
+   },
+   {
+    "id": "12.7",
+    "titulo": "Fornecer as informações mencionadas no item 12.5 em relação aos membros dos comitês estatutários, bem como dos comitês de auditoria, de risco, financeiro e de remuneração, ainda que tais comitês ou estruturas não sejam estatutários",
+    "facultativo": false
+   },
+   {
+    "id": "12.8",
+    "titulo": "Em relação a cada uma das pessoas que atuaram como membro dos comitês estatutários, bem como dos comitês de auditoria, de risco, financeiro e de remuneração, ainda que tais comitês ou estruturas não sejam estatutários, informar, em formato de tabela, o percentual de participação nas reuniões realiza",
+    "facultativo": false
+   },
+   {
+    "id": "12.9",
+    "titulo": "Informar a existência de relação conjugal, união estável ou parentesco até o segundo grau entre",
+    "facultativo": true
+   },
+   {
+    "id": "12.10",
+    "titulo": "Informar sobre relações de subordinação, prestação de serviço ou controle mantidas, nos 3 últimos exercícios sociais, entre administradores do emissor e",
+    "facultativo": true
+   },
+   {
+    "id": "12.11",
+    "titulo": "Descrever as disposições de quaisquer acordos, inclusive apólices de seguro, que prevejam o pagamento ou o reembolso de despesas suportadas pelos administradores, decorrentes da reparação de danos causados a terceiros ou ao emissor, de penalidades impostas por agentes estatais, ou de acordos com o o",
+    "facultativo": true
+   },
+   {
+    "id": "12.12",
+    "titulo": "Item 12.12 REVOGADO",
+    "facultativo": true
+   },
+   {
+    "id": "12.13",
+    "titulo": "Fornecer outras informações que o emissor julgue relevantes",
+    "facultativo": false
+   }
+  ]
+ },
+ {
+  "id": "13",
+  "titulo": "Remuneração dos administradores",
+  "itens": [
+   {
+    "id": "13.1",
+    "titulo": "Descrever a política ou prática de remuneração do conselho de administração, da diretoria estatutária e não estatutária, do conselho fiscal, dos comitês estatutários e dos comitês de auditoria, de risco, financeiro e de remuneração, abordando os seguintes aspectos",
+    "facultativo": true
+   },
+   {
+    "id": "13.2",
+    "titulo": "Em relação à remuneração reconhecida no resultado dos 3 últimos exercícios sociais e à prevista para o exercício social corrente do conselho de administração, da diretoria estatutária e do conselho fiscal, elaborar tabela com o seguinte conteúdo",
+    "facultativo": false
+   },
+   {
+    "id": "13.3",
+    "titulo": "Em relação à remuneração variável dos 3 últimos exercícios sociais e à prevista para o exercício social corrente do conselho de administração, da diretoria estatutária e do conselho fiscal, elaborar tabela com o seguinte conteúdo",
+    "facultativo": true
+   },
+   {
+    "id": "13.4",
+    "titulo": "Em relação ao plano de remuneração baseado em ações do conselho de administração e da diretoria estatutária, em vigor no último exercício social e previsto para o exercício social corrente, descrever",
+    "facultativo": true
+   },
+   {
+    "id": "13.5",
+    "titulo": "Em relação à remuneração baseada em ações reconhecida no resultado dos 3 últimos exercícios sociais e à prevista para o exercício social corrente, do conselho de administração e da diretoria estatutária, elaborar tabela com o seguinte conteúdo",
+    "facultativo": true
+   },
+   {
+    "id": "13.6",
+    "titulo": "Em relação às opções em aberto do conselho de administração e da diretoria estatutária ao final do último exercício social, elaborar tabela com o seguinte conteúdo",
+    "facultativo": true
+   },
+   {
+    "id": "13.7",
+    "titulo": "Em relação às opções exercidas e ações entregues relativas à remuneração baseada em ações do conselho de administração e da diretoria estatutária, nos 3 últimos exercícios sociais, elaborar tabela com o seguinte conteúdo",
+    "facultativo": true
+   },
+   {
+    "id": "13.8",
+    "titulo": "Descrição sumária das informações necessárias para a compreensão dos dados divulgados nos itens 13.5 a 13.7, tal como a explicação do método de precificação do valor das ações e das opções, indicando, no mínimo",
+    "facultativo": true
+   },
+   {
+    "id": "13.9",
+    "titulo": "Informar a quantidade de ações ou cotas direta ou indiretamente detidas, no Brasil ou no exterior, e outros valores mobiliários conversíveis em ações ou cotas, emitidos pelo emissor, seus controladores diretos ou indiretos, sociedades controladas ou sob controle comum, por membros do conselho de adm",
+    "facultativo": true
+   },
+   {
+    "id": "13.10",
+    "titulo": "Em relação aos planos de previdência em vigor conferidos aos membros do conselho de administração e aos diretores estatutários, fornecer as seguintes informações em forma de tabela",
+    "facultativo": true
+   },
+   {
+    "id": "13.11",
+    "titulo": "Em forma de tabela, indicar, para os 3 últimos exercícios sociais, em relação ao conselho de administração, à diretoria estatutária e ao conselho fiscal",
+    "facultativo": true
+   },
+   {
+    "id": "13.12",
+    "titulo": "Descrever arranjos contratuais, apólices de seguros ou outros instrumentos que estruturem mecanismos de remuneração ou indenização para os administradores em caso de destituição do cargo ou de aposentadoria, indicando quais as consequências financeiras para o emissor",
+    "facultativo": true
+   },
+   {
+    "id": "13.13",
+    "titulo": "Em relação aos 3 últimos exercícios sociais, indicar o percentual da remuneração total de cada órgão reconhecida no resultado do emissor referente a membros do conselho de administração, da diretoria estatutária ou do conselho fiscal que sejam partes relacionadas aos controladores, diretos ou indire",
+    "facultativo": false
+   },
+   {
+    "id": "13.14",
+    "titulo": "Em relação aos 3 últimos exercícios sociais, indicar os valores reconhecidos no resultado do emissor como remuneração de membros do conselho de administração, da diretoria estatutária ou do conselho fiscal, agrupados por órgão, por qualquer razão que não a função que ocupam, como por exemplo, comiss",
+    "facultativo": true
+   },
+   {
+    "id": "13.15",
+    "titulo": "Em relação aos 3 últimos exercícios sociais, indicar os valores reconhecidos no resultado de controladores, diretos ou indiretos, de sociedades sob controle comum e de controladas do emissor, como remuneração de membros do conselho de administração, da diretoria estatutária ou do conselho fiscal do",
+    "facultativo": false
+   },
+   {
+    "id": "13.16",
+    "titulo": "Fornecer outras informações que o emissor julgue relevantes",
+    "facultativo": false
+   }
+  ]
+ },
+ {
+  "id": "14",
+  "titulo": "Recursos humanos",
+  "itens": [
+   {
+    "id": "14.1",
+    "titulo": "Descrever os recursos humanos do emissor, fornecendo as seguintes informações",
+    "facultativo": true
+   },
+   {
+    "id": "14.2",
+    "titulo": "Comentar qualquer alteração relevante ocorrida com relação aos números divulgados no item 14.1 acima",
+    "facultativo": true
+   },
+   {
+    "id": "14.3",
+    "titulo": "Descrever as políticas de remuneração dos empregados do emissor, informando",
+    "facultativo": true
+   },
+   {
+    "id": "14.4",
+    "titulo": "Descrever as relações entre o emissor e sindicatos, indicando se houve paralisações e greves nos 3 últimos exercícios sociais",
+    "facultativo": true
+   },
+   {
+    "id": "14.5",
+    "titulo": "Fornecer outras informações que o emissor julgue relevantes",
+    "facultativo": false
+   }
+  ]
+ },
+ {
+  "id": "15",
+  "titulo": "Controle e grupo econômico",
+  "itens": [
+   {
+    "id": "15.1",
+    "titulo": "Identificar o acionista ou grupo de acionistas controladores, indicando em relação a cada um deles",
+    "facultativo": false
+   },
+   {
+    "id": "15.2",
+    "titulo": "Em forma de tabela, lista contendo as informações abaixo sobre os acionistas, ou grupos de acionistas que agem em conjunto ou que representam o mesmo interesse, com participação igual ou superior a 5% de uma mesma classe ou espécie de ações e que não estejam listados no item 15.1",
+    "facultativo": true
+   },
+   {
+    "id": "15.3",
+    "titulo": "Em forma de tabela, descrever a distribuição do capital, conforme apurado na última assembleia geral de acionistas",
+    "facultativo": false
+   },
+   {
+    "id": "15.4",
+    "titulo": "Inserir organograma dos acionistas do emissor e do grupo econômico em que se insere, indicando",
+    "facultativo": false
+   },
+   {
+    "id": "15.5",
+    "titulo": "Com relação a qualquer acordo de acionistas arquivado na sede do emissor ou do qual o controlador seja parte, regulando o exercício do direito de voto ou a transferência de ações de emissão do emissor, indicar",
+    "facultativo": true
+   },
+   {
+    "id": "15.6",
+    "titulo": "Indicar alterações relevantes nas participações dos membros do grupo de controle e administradores do emissor",
+    "facultativo": true
+   },
+   {
+    "id": "15.7",
+    "titulo": "Descrever as principais operações societárias ocorridas no grupo que tenham tido efeito relevante para o emissor, tais como incorporações, fusões, cisões, incorporações de ações, alienações e aquisições de controle societário, aquisições e alienações de ativos importantes, indicando, quando envolver",
+    "facultativo": false
+   },
+   {
+    "id": "15.8",
+    "titulo": "Fornecer outras informações que o emissor julgue relevantes",
+    "facultativo": false
+   }
+  ]
+ },
+ {
+  "id": "16",
+  "titulo": "Transações com partes relacionadas",
+  "itens": [
+   {
+    "id": "16.1",
+    "titulo": "Descrever as regras, políticas e práticas do emissor quanto à realização de transações com partes relacionadas, conforme definidas pelas regras contábeis que tratam desse assunto, indicando, quando houver uma política formal adotada pelo emissor, o órgão responsável por sua aprovação, data da aprova",
+    "facultativo": true
+   },
+   {
+    "id": "16.2",
+    "titulo": "Com exceção das operações realizadas entre emissor e sociedades em que este detenha, direta ou indiretamente, a totalidade do capital social, informar, em relação às transações com partes relacionadas que, segundo as normas contábeis, devam ser divulgadas nas demonstrações financeiras individuais ou",
+    "facultativo": false
+   },
+   {
+    "id": "16.3",
+    "titulo": "Em relação a cada uma das transações ou conjunto de transações mencionados no item 16.2 acima ocorridas no último exercício social: (a) identificar as medidas tomadas para tratar de conflitos de interesses; e (b) demonstrar o caráter estritamente comutativo das condições pactuadas ou o pagamento com",
+    "facultativo": false
+   },
+   {
+    "id": "16.4",
+    "titulo": "Fornecer outras informações que o emissor julgue relevantes",
+    "facultativo": false
+   }
+  ]
+ },
+ {
+  "id": "17",
+  "titulo": "Capital social",
+  "itens": [
+   {
+    "id": "17.1",
+    "titulo": "Elaborar tabela contendo as seguintes informações sobre o capital social",
+    "facultativo": false
+   },
+   {
+    "id": "17.2",
+    "titulo": "Em relação aos aumentos de capital do emissor, indicar",
+    "facultativo": true
+   },
+   {
+    "id": "17.3",
+    "titulo": "Em relação aos desdobramentos, grupamentos e bonificações, informar em forma de tabela",
+    "facultativo": true
+   },
+   {
+    "id": "17.4",
+    "titulo": "Em relação às reduções de capital do emissor, indicar",
+    "facultativo": true
+   },
+   {
+    "id": "17.5",
+    "titulo": "Fornecer outras informações que o emissor julgue relevantes",
+    "facultativo": false
+   }
+  ]
+ },
+ {
+  "id": "18",
+  "titulo": "Valores mobiliários",
+  "itens": [
+   {
+    "id": "18.1",
+    "titulo": "Descrever os direitos de cada classe e espécie de ação emitida",
+    "facultativo": true
+   },
+   {
+    "id": "18.2",
+    "titulo": "Descrever, se existirem, as regras estatutárias que limitem o direito de voto de acionistas significativos ou que os obriguem a realizar oferta pública",
+    "facultativo": true
+   },
+   {
+    "id": "18.3",
+    "titulo": "Descrever exceções e cláusulas suspensivas relativas a direitos patrimoniais ou políticos previstos no estatuto",
+    "facultativo": true
+   },
+   {
+    "id": "18.4",
+    "titulo": "Em forma de tabela, informar volume de negociações bem como a média diária e maiores e menores cotações dos valores mobiliários negociados em bolsa de valores ou mercado de balcão organizado, em cada um dos trimestres dos 3 últimos exercícios sociais",
+    "facultativo": true
+   },
+   {
+    "id": "18.5",
+    "titulo": "Descrever outros valores mobiliários emitidos no Brasil que não sejam ações e que não tenham vencido ou sido resgatados, indicando",
+    "facultativo": false
+   },
+   {
+    "id": "18.6",
+    "titulo": "Indicar os mercados brasileiros nos quais valores mobiliários do emissor são admitidos à negociação",
+    "facultativo": false
+   },
+   {
+    "id": "18.7",
+    "titulo": "Em relação a cada classe e espécie de valor mobiliário admitida à negociação em mercados estrangeiros, indicar",
+    "facultativo": false
+   },
+   {
+    "id": "18.8",
+    "titulo": "Descrever títulos emitidos no exterior, quando relevantes, indicando, se aplicável",
+    "facultativo": false
+   },
+   {
+    "id": "18.9",
+    "titulo": "Descrever as ofertas públicas de distribuição efetuadas pelo emissor ou por terceiros, incluindo controladores e sociedades coligadas e controladas, relativas a valores mobiliários do emissor",
+    "facultativo": false
+   },
+   {
+    "id": "18.10",
+    "titulo": "Caso o emissor tenha feito oferta pública de distribuição de valores mobiliários, indicar",
+    "facultativo": true
+   },
+   {
+    "id": "18.11",
+    "titulo": "Descrever as ofertas públicas de aquisição feitas pelo emissor relativas a ações de emissão de terceiro",
+    "facultativo": true
+   },
+   {
+    "id": "18.12",
+    "titulo": "Fornecer outras informações que o emissor julgue relevantes",
+    "facultativo": false
+   }
+  ]
+ },
+ {
+  "id": "19",
+  "titulo": "Planos de recompra e valores mobiliários em tesouraria",
+  "itens": [
+   {
+    "id": "19.1",
+    "titulo": "Em relação aos planos de recompra de ações do emissor, fornecer as seguintes informações",
+    "facultativo": true
+   },
+   {
+    "id": "19.2",
+    "titulo": "Em relação aos valores mobiliários mantidos em tesouraria, em forma de tabela, segregando por tipo, classe e espécie, indicar",
+    "facultativo": true
+   },
+   {
+    "id": "19.3",
+    "titulo": "Fornecer outras informações que o emissor julgue relevantes",
+    "facultativo": false
+   }
+  ]
+ },
+ {
+  "id": "20",
+  "titulo": "Política de negociação de valores mobiliários",
+  "itens": [
+   {
+    "id": "20.1",
+    "titulo": "Indicar se o emissor adotou política de negociação de valores mobiliários de sua emissão pelos acionistas controladores, diretos ou indiretos, diretores, membros do conselho de administração, do conselho fiscal e de qualquer órgão com funções técnicas ou consultivas, criado por disposição estatutári",
+    "facultativo": true
+   },
+   {
+    "id": "20.2",
+    "titulo": "Fornecer outras informações que o emissor julgue relevantes",
+    "facultativo": false
+   }
+  ]
+ },
+ {
+  "id": "21",
+  "titulo": "Política de divulgação de informações",
+  "itens": [
+   {
+    "id": "21.1",
+    "titulo": "Descrever normas, regimentos ou procedimentos internos adotados pelo emissor para assegurar que as informações a serem divulgadas publicamente sejam recolhidas, processadas e relatadas de maneira precisa e tempestiva",
+    "facultativo": true
+   },
+   {
+    "id": "21.2",
+    "titulo": "Descrever a política de divulgação de ato ou fato relevante adotada pelo emissor, indicando o canal ou canais de comunicação utilizado(s) para disseminar informações sobre atos e fatos relevantes e os procedimentos relativos à manutenção de sigilo acerca de informações relevantes não divulgadas e os",
+    "facultativo": true
+   },
+   {
+    "id": "21.3",
+    "titulo": "Informar os administradores responsáveis pela implementação, manutenção, avaliação e fiscalização da política de divulgação de informações",
+    "facultativo": true
+   },
+   {
+    "id": "21.4",
+    "titulo": "Fornecer outras informações que o emissor julgue relevantes",
+    "facultativo": false
+   }
+  ]
+ }
+]

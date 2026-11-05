@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    @apply bg-white text-ink font-sans text-base leading-relaxed;
+  }
+  ::selection {
+    @apply bg-accent text-white;
+  }
+  :focus-visible {
+    outline: 2px solid theme('colors.accent');
+    outline-offset: 3px;
+  }
+  section[id] {
+    scroll-margin-top: 5rem;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+}
+
+@layer components {
+  .display {
+    @apply font-extrabold leading-[0.95] tracking-[-0.02em];
+  }
+  .link {
+    @apply text-accent underline decoration-1 underline-offset-[0.2em];
+    transition: text-decoration-thickness 150ms ease-out;
+  }
+  .link:hover {
+    text-decoration-thickness: 2px;
+  }
+  .btn {
+    @apply inline-flex items-center bg-accent px-5 py-3 font-semibold text-white;
+    transition: background-color 150ms ease-out, transform 150ms ease-out;
+  }
+  .btn:hover {
+    background-color: #0A2254;
+  }
+  .btn:active {
+    transform: translateY(1px);
+  }
+  /* App screenshots keep a 1px rule so white panels don't dissolve into the page. */
+  .shot {
+    @apply block h-auto w-full border border-rule;
+  }
+}
+
+/* The page's one entrance: hero text rises once on load. Off with reduced motion. */
+@keyframes rise {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .enter { animation: rise 0.6s cubic-bezier(0.22, 1, 0.36, 1) both; }
+  .enter-late { animation: rise 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.15s both; }
+}
